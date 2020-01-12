@@ -13,6 +13,6 @@ https://youtu.be/XPCGNAVu2Ec
 
 ## Spice
 
-[Client Download](https://virt-manager.org/download/) [Alternative](https://releases.pagure.org/virt-viewer/) After installed search for **Remote Viewer** on windows
+[Client Download](https://virt-manager.org/download/) ([Alternative](https://releases.pagure.org/virt-viewer/)) After installed search for **Remote Viewer** on windows
 
 https://github.com/nodesource/distributions/blob/master/README.md
