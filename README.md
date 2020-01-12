@@ -31,6 +31,16 @@ docker run -d -p 9000:9000 \
 ```
 192.168.XX.XX:9000
 ## [Plex](https://linuxize.com/post/how-to-install-plex-media-server-on-ubuntu-18-04/)
+Mounting NAS
+You are mounting the CIFS share as root (because you used sudo), so you cannot write as normal user. If your Linux Distribution and its kernel are recent enough that you could mount the network share as a normal user (but under a folder that the user own), you will have the proper credentials to write file (e.g. mount the shared folder somewhere under your home directory, like for instance $HOME/netshare/. Obviously, you would need to create the folder before mounting it).
+
+An alternative is to specify the user and group ID that the mounted network share should used, this would allow that particular user and potentially group to write to the share. Add the following options to your mount: uid=<user>,gid=<group> and replace <user> and <group> respectively by your own user and default group, which you can find automatically with the id command.
+
+sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+If the server is sending ownership information, you may need to add the forceuid and forcegid options.
+
+sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g),forceuid,forcegid, //server-address/folder /mount/path/on/ubuntu
+https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown#68081
 # Pihole
 https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
 
