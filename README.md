@@ -13,6 +13,9 @@ https://youtu.be/vUbKj2En0aE
 
 https://youtu.be/XPCGNAVu2Ec
 
+## GPU passthrough not tested
+https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to_gpu_passthrough/
+
 ## Spice
 
 [Client Download](https://virt-manager.org/download/) ([Alternative](https://releases.pagure.org/virt-viewer/)) After installed search for **Remote Viewer** on windows
