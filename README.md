@@ -36,10 +36,10 @@ You are mounting the CIFS share as root (because you used sudo), so you cannot w
 
 An alternative is to specify the user and group ID that the mounted network share should used, this would allow that particular user and potentially group to write to the share. Add the following options to your mount: uid=<user>,gid=<group> and replace <user> and <group> respectively by your own user and default group, which you can find automatically with the id command.
 
-sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+`sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu`
 If the server is sending ownership information, you may need to add the forceuid and forcegid options.
 
-sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g),forceuid,forcegid, //server-address/folder /mount/path/on/ubuntu
+`sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g),forceuid,forcegid, //server-address/folder /mount/path/on/ubuntu`
 https://unix.stackexchange.com/questions/68079/mount-cifs-network-drive-write-permissions-and-chown#68081
 # Pihole
 https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
