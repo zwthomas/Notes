@@ -13,6 +13,8 @@ switch:
         command_state: 'curl -s GET http://192.168.1.240:8060/query/device-info | grep power-mode | sed -e "s:<power-mode>DisplayOff</power-mode>:OFF:" -e "s:<power-mode>PowerOn</power-mode>:ON:"'
         value_template: '{{ value == "ON" }}'
 ```
+## [OpenVPN-as](https://hub.docker.com/r/linuxserver/openvpn-as/)
+Make sure a port is forwarded on the router to the ip of the machine this container is running on
 
 # Pihole
 https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
