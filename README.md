@@ -1,5 +1,9 @@
 # Nest Brain Setup
 ## [Docker on Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+Start docker on boot:
+```
+systemctl enable docker
+```
 ## [Hassio Docker](https://www.home-assistant.io/docs/installation/docker/)
 [Control TCL](https://www.reddit.com/r/homeassistant/comments/8tl2pg/turn_roku_tv_onoff/):
 ```
