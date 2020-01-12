@@ -1,6 +1,18 @@
 # Nest Brain Setup
 ## [Docker on Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
 ## [Hassio Docker](https://www.home-assistant.io/docs/installation/docker/)
+[Control TCL](https://www.reddit.com/r/homeassistant/comments/8tl2pg/turn_roku_tv_onoff/):
+```
+switch:
+  - platform: command_line
+    switches:
+      #toggles office Roku TV
+      office_tv_power:
+        command_on: 'curl -X POST http://192.168.1.240:8060/keypress/PowerOn'
+        command_off: 'curl -X POST http://192.168.1.240:8060/keypress/PowerOff'
+        command_state: 'curl -s GET http://192.168.1.240:8060/query/device-info | grep power-mode | sed -e "s:<power-mode>DisplayOff</power-mode>:OFF:" -e "s:<power-mode>PowerOn</power-mode>:ON:"'
+        value_template: '{{ value == "ON" }}'
+```
 
 # Pihole
 https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
