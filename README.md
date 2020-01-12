@@ -30,6 +30,7 @@ docker run -d -p 9000:9000 \
 -v portainer_data:/data portainer/portainer
 ```
 192.168.XX.XX:9000
+# [Plex](https://linuxize.com/post/how-to-install-plex-media-server-on-ubuntu-18-04/)
 # Pihole
 https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
 
