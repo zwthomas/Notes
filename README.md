@@ -1,3 +1,7 @@
+# Pihole
+https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
+[DNS over HTTPS](https://scotthelme.co.uk/securing-dns-across-all-of-my-devices-with-pihole-dns-over-https-1-1-1-1/)
+
 # Proxmox
 
 ## Installing Windows 10
