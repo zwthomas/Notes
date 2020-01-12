@@ -16,6 +16,16 @@ switch:
 ## [OpenVPN-as](https://hub.docker.com/r/linuxserver/openvpn-as/)
 Make sure a port is forwarded on the router to the ip of the machine this container is running on
 
+## Portainer
+```
+docker volume create portainer_data
+docker run -d -p 9000:9000 \
+--name portainer \
+--restart always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_data:/data portainer/portainer
+```
+192.168.XX.XX:9000
 # Pihole
 https://blog.cryptoaustralia.org.au/instructions-for-setting-up-pi-hole/
 
