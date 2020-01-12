@@ -1,6 +1,8 @@
 # Proxmox
 
 ## Installing Windows 10
+If you would like to use RDP to connect, you must install the Pro version of Windows 10.[Enable RDP](https://pureinfotech.com/enable-remote-desktop-windows-10/) after install
+
 [virtio drivers](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/)
 
 VirtioIo driver install in needed to install: Balloon, NetKVM, viostor
