@@ -69,3 +69,10 @@ https://www.reddit.com/r/homelab/comments/b5xpua/the_ultimate_beginners_guide_to
 [Client Download](https://virt-manager.org/download/) ([Alternative](https://releases.pagure.org/virt-viewer/)) After installed search for **Remote Viewer** on windows
 
 https://github.com/nodesource/distributions/blob/master/README.md
+
+
+
+```
+sudo apt install xrdp
+sudo systemctl enable xrdp
+```
