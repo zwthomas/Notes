@@ -21,6 +21,21 @@ switch:
 ```
 ## [OpenVPN-as](https://hub.docker.com/r/linuxserver/openvpn-as/)
 Make sure a port is forwarded on the router to the ip of the machine this container is running on
+```
+docker create \
+  --name=openvpn-as \
+  --cap-add=NET_ADMIN \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=America/Chicago \
+  -e INTERFACE=eth0  \
+  -p 943:943 \
+  -p 9443:9443 \
+  -p 1194:1194/udp \
+  -v ~/docker/openvpn-as:/config \
+  --restart unless-stopped \
+  linuxserver/openvpn-as
+```
 
 ## Portainer
 ```
