@@ -37,6 +37,8 @@ docker create \
   linuxserver/openvpn-as
 ```
 
+https://DOCKER-HOST-IP:943/admin
+
 ## Portainer
 ```
 docker volume create portainer_data
