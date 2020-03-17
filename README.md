@@ -95,3 +95,7 @@ https://github.com/nodesource/distributions/blob/master/README.md
 sudo apt install xrdp
 sudo systemctl enable xrdp
 ```
+
+
+# Useful: 
+https://sqlitebrowser.org/
