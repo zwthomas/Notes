@@ -114,3 +114,8 @@ export PS1="[\u@\h \W]\$(git_branch)\$ "
 
 ```
 https://www.shellhacks.com/bash-colors/
+
+
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
