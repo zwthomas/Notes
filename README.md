@@ -135,3 +135,6 @@ ipmitool raw 0x30 0x30 0x02 0xff 0x17
 
 `nvidia-smi dmon -s -u`
 
+
+https://askubuntu.com/questions/157128/proper-fstab-entry-to-mount-a-samba-share-on-boot
+
