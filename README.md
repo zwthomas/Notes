@@ -138,3 +138,8 @@ ipmitool raw 0x30 0x30 0x02 0xff 0x17
 
 https://askubuntu.com/questions/157128/proper-fstab-entry-to-mount-a-samba-share-on-boot
 
+
+```
+docker build --no-cache --tag youtube-subs:1.1 .
+docker run -v /home/cargo/docker/config/yt-subs:/usr/src/app/config --detach --name youtube-sub youtube-subs:1.1
+```
