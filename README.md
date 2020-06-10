@@ -147,3 +147,5 @@ docker run -v /home/cargo/docker/config/yt-subs:/usr/src/app/config --detach --n
 Proxmox change ip https://forum.proxmox.com/threads/help-with-changing-ip-address-reinstalling.55421/
 
 Unifi adopt https://help.ui.com/hc/en-us/articles/204950304-UniFi-Troubleshooting-Device-Adoption
+
+prox vlan https://engineerworkshop.com/blog/configuring-vlans-on-proxmox-an-introductory-guide/
