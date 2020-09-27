@@ -149,3 +149,15 @@ Proxmox change ip https://forum.proxmox.com/threads/help-with-changing-ip-addres
 Unifi adopt https://help.ui.com/hc/en-us/articles/204950304-UniFi-Troubleshooting-Device-Adoption
 
 prox vlan https://engineerworkshop.com/blog/configuring-vlans-on-proxmox-an-introductory-guide/
+
+# Ubuntu pihole 
+```
+sudo systemctl disable systemd-resolved
+sudo systemctl stop systemd-resolved
+```
+# pihole pfsense
+- System -> General Setup -> remove dns
+- Disable DNS Forwarder
+- Disable DNS Resolver
+- DHCP Server -> Set dns server to pihole
+
